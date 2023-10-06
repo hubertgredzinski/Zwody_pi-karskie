@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+import 'difficulty_level._page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -44,6 +47,50 @@ class HomePage extends StatelessWidget {
               ),
             ],
           ),
+          body: const Button(),
+        ),
+      ),
+    );
+  }
+}
+
+class Button extends StatelessWidget {
+  const Button({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(40),
+            ),
+            side: BorderSide(
+              color: Colors.white,
+              width: 1,
+            ),
+          ),
+          backgroundColor: Colors.green,
+          padding: const EdgeInsets.symmetric(
+            horizontal: 25,
+            vertical: 12,
+          ),
+        ),
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const DifficultyLevelPage(),
+            ),
+          );
+        },
+        child: Text(
+          'Wybierz zwód piłkarski',
+          style: GoogleFonts.robotoSlab(
+              color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold),
         ),
       ),
     );
