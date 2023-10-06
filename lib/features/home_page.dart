@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +35,7 @@ class MyApp extends StatelessWidget {
             actions: const [
               Padding(
                 padding: EdgeInsets.only(
-                  right: 75.0,
+                  right: 95.0,
                 ),
                 child: Icon(
                   Icons.sports_soccer_sharp,
