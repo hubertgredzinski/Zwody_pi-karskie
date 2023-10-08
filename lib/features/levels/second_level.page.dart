@@ -14,7 +14,18 @@ class SecondLevelPage extends StatelessWidget {
       ),
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('2'),
+          iconTheme: const IconThemeData(
+            color: Colors.white,
+          ),
+          title: const Text(
+            'Poziom II',
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          centerTitle: true,
+          backgroundColor: Colors.green,
         ),
         backgroundColor: Colors.transparent,
       ),

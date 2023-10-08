@@ -14,7 +14,18 @@ class ThirdLevelPage extends StatelessWidget {
       ),
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('3'),
+          iconTheme: const IconThemeData(
+            color: Colors.white,
+          ),
+          title: const Text(
+            'Poziom III',
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          centerTitle: true,
+          backgroundColor: Colors.green,
         ),
         backgroundColor: Colors.transparent,
       ),
