@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:football_tricks/features/levels/second_level.page.dart';
+import 'package:football_tricks/features/levels/third_level.page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'difficulty_level._page.dart';
+import 'levels/first_level._page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -9,7 +11,6 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.green,
@@ -47,51 +48,146 @@ class HomePage extends StatelessWidget {
               ),
             ],
           ),
-          body: const Button(),
+          body: const Center(
+            child: Column(children: [
+              SizedBox(
+                height: 190,
+              ),
+              LevelOneButton(),
+              SizedBox(
+                height: 30,
+              ),
+              LevelTwoButton(),
+              SizedBox(
+                height: 33,
+              ),
+              LevelThreeButton(),
+            ]),
+          ),
         ),
       ),
     );
   }
 }
 
-class Button extends StatelessWidget {
-  const Button({
+class LevelOneButton extends StatelessWidget {
+  const LevelOneButton({
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: ElevatedButton(
-        style: ElevatedButton.styleFrom(
-          shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(
-              Radius.circular(40),
-            ),
-            side: BorderSide(
-              color: Colors.white,
-              width: 1,
-            ),
+    return ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(40),
           ),
-          backgroundColor: Colors.green,
-          padding: const EdgeInsets.symmetric(
-            horizontal: 25,
-            vertical: 12,
+          side: BorderSide(
+            color: Colors.white,
+            width: 1,
           ),
         ),
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const DifficultyLevelPage(),
-            ),
-          );
-        },
-        child: Text(
-          'Wybierz zwód piłkarski',
-          style: GoogleFonts.robotoSlab(
-              color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold),
+        backgroundColor: Colors.green,
+        padding: const EdgeInsets.symmetric(
+          horizontal: 25,
+          vertical: 12,
         ),
+      ),
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const FirstLevelPage(),
+          ),
+        );
+      },
+      child: Text(
+        'Poziom I',
+        style: GoogleFonts.robotoSlab(
+            color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold),
+      ),
+    );
+  }
+}
+
+class LevelTwoButton extends StatelessWidget {
+  const LevelTwoButton({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(40),
+          ),
+          side: BorderSide(
+            color: Colors.white,
+            width: 1,
+          ),
+        ),
+        backgroundColor: Colors.green,
+        padding: const EdgeInsets.symmetric(
+          horizontal: 25,
+          vertical: 12,
+        ),
+      ),
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const SecondLevelPage(),
+          ),
+        );
+      },
+      child: Text(
+        'Poziom II',
+        style: GoogleFonts.robotoSlab(
+            color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold),
+      ),
+    );
+  }
+}
+
+class LevelThreeButton extends StatelessWidget {
+  const LevelThreeButton({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(40),
+          ),
+          side: BorderSide(
+            color: Colors.white,
+            width: 1,
+          ),
+        ),
+        backgroundColor: Colors.green,
+        padding: const EdgeInsets.symmetric(
+          horizontal: 25,
+          vertical: 12,
+        ),
+      ),
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const ThirdLevelPage(),
+          ),
+        );
+      },
+      child: Text(
+        'Poziom III',
+        style: GoogleFonts.robotoSlab(
+            color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold),
       ),
     );
   }
