@@ -1,4 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:football_tricks/features/levels/second_level/second_level_video/double_outside_cut_page.dart';
+import 'package:football_tricks/features/levels/second_level/second_level_video/double_scissors_page.dart';
+import 'package:football_tricks/features/levels/second_level/second_level_video/drag_push_page.dart';
+import 'package:football_tricks/features/levels/second_level/second_level_video/elastico_page.dart';
+import 'package:football_tricks/features/levels/second_level/second_level_video/pull_spin_page.dart';
+import 'package:football_tricks/features/levels/second_level/second_level_video/slap_step_over_page.dart';
+import 'package:football_tricks/features/levels/second_level/second_level_video/sonic_turn_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SecondLevelPage extends StatelessWidget {
@@ -43,7 +50,7 @@ class SecondLevelPage extends StatelessWidget {
               SizedBox(
                 height: 30,
               ),
-              DoubleSiccors(),
+              DoubleScissors(),
               SizedBox(
                 height: 30,
               ),
@@ -62,50 +69,6 @@ class SecondLevelPage extends StatelessWidget {
               Elastico(),
             ],
           ),
-        ),
-      ),
-    );
-  }
-}
-
-class DragPush extends StatelessWidget {
-  const DragPush({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return ElevatedButton(
-      style: ElevatedButton.styleFrom(
-        shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(
-            Radius.circular(40),
-          ),
-          side: BorderSide(
-            color: Colors.white,
-            width: 1,
-          ),
-        ),
-        backgroundColor: Colors.green,
-        padding: const EdgeInsets.symmetric(
-          horizontal: 25,
-          vertical: 12,
-        ),
-      ),
-      onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => const SecondLevelPage(),
-          ),
-        );
-      },
-      child: Text(
-        'Drag Push',
-        style: GoogleFonts.robotoSlab(
-          color: Colors.white,
-          fontSize: 25,
-          fontWeight: FontWeight.bold,
         ),
       ),
     );
@@ -140,12 +103,56 @@ class DoubleOutSideCut extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const SecondLevelPage(),
+            builder: (context) => const DoubleOutSideCutVideoPage(),
           ),
         );
       },
       child: Text(
         'Double Outside Cut',
+        style: GoogleFonts.robotoSlab(
+          color: Colors.white,
+          fontSize: 25,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+    );
+  }
+}
+
+class DragPush extends StatelessWidget {
+  const DragPush({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(40),
+          ),
+          side: BorderSide(
+            color: Colors.white,
+            width: 1,
+          ),
+        ),
+        backgroundColor: Colors.green,
+        padding: const EdgeInsets.symmetric(
+          horizontal: 25,
+          vertical: 12,
+        ),
+      ),
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const DragPushVideoPage(),
+          ),
+        );
+      },
+      child: Text(
+        'Drag Push',
         style: GoogleFonts.robotoSlab(
           color: Colors.white,
           fontSize: 25,
@@ -184,7 +191,7 @@ class SonicTurn extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const SecondLevelPage(),
+            builder: (context) => const SonicTurnVideoPage(),
           ),
         );
       },
@@ -200,8 +207,8 @@ class SonicTurn extends StatelessWidget {
   }
 }
 
-class DoubleSiccors extends StatelessWidget {
-  const DoubleSiccors({
+class DoubleScissors extends StatelessWidget {
+  const DoubleScissors({
     super.key,
   });
 
@@ -228,12 +235,12 @@ class DoubleSiccors extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const SecondLevelPage(),
+            builder: (context) => const DoubleScissorsVideoPage(),
           ),
         );
       },
       child: Text(
-        'Double Siccors',
+        'Double Scissors',
         style: GoogleFonts.robotoSlab(
           color: Colors.white,
           fontSize: 25,
@@ -272,7 +279,7 @@ class PullSpin extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const SecondLevelPage(),
+            builder: (context) => const PullSpinVideoPage(),
           ),
         );
       },
@@ -316,7 +323,7 @@ class SlapStepOver extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const SecondLevelPage(),
+            builder: (context) => const SlapStepOverVideoPage(),
           ),
         );
       },
@@ -360,7 +367,7 @@ class Elastico extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const SecondLevelPage(),
+            builder: (context) => const ElasticoVideoPage(),
           ),
         );
       },

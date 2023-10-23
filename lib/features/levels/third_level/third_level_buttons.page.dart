@@ -1,4 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:football_tricks/features/levels/third_level/third_level_video/drag_sissors_page.dart';
+import 'package:football_tricks/features/levels/third_level/third_level_video/drag_step_over_page.dart';
+import 'package:football_tricks/features/levels/third_level/third_level_video/elastico_step_over_page.dart';
+import 'package:football_tricks/features/levels/third_level/third_level_video/mc_geady_u_turn_page.dart';
+import 'package:football_tricks/features/levels/third_level/third_level_video/mcgeady_spin_page.dart';
+import 'package:football_tricks/features/levels/third_level/third_level_video/sissors_slide_page.dart';
+import 'package:football_tricks/features/levels/third_level/third_level_video/slap_hook_turn_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ThirdLevelPage extends StatelessWidget {
@@ -96,7 +103,7 @@ class SissorsSlide extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const ThirdLevelPage(),
+            builder: (context) => const SissorsSlideVideoPage(),
           ),
         );
       },
@@ -140,7 +147,7 @@ class McGeadySpin extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const ThirdLevelPage(),
+            builder: (context) => const McGeadySpinVideoPage(),
           ),
         );
       },
@@ -184,7 +191,7 @@ class SlapHookTurn extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const ThirdLevelPage(),
+            builder: (context) => const SlapHookTurnVideoPage(),
           ),
         );
       },
@@ -228,7 +235,7 @@ class DragSissors extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const ThirdLevelPage(),
+            builder: (context) => const DragSissorsVideoPage(),
           ),
         );
       },
@@ -272,7 +279,7 @@ class DragStepOver extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const ThirdLevelPage(),
+            builder: (context) => const DragStepOverVideoPage(),
           ),
         );
       },
@@ -316,7 +323,7 @@ class ElasticoStepOver extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const ThirdLevelPage(),
+            builder: (context) => const ElasticoStepOverVideoPage(),
           ),
         );
       },
@@ -360,7 +367,7 @@ class McGeadyUTurn extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const ThirdLevelPage(),
+            builder: (context) => const McGeadyUTurnVideoPage(),
           ),
         );
       },
