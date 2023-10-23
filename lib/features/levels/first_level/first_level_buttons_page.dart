@@ -1,5 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:football_tricks/features/levels/first_level/first_level_video/chop_page.dart';
+import 'package:football_tricks/features/levels/first_level/first_level_video/hook_turn_page.dart';
+import 'package:football_tricks/features/levels/first_level/first_level_video/inside_cut_page.dart';
+import 'package:football_tricks/features/levels/first_level/first_level_video/outside_cut_page.dart';
+import 'package:football_tricks/features/levels/first_level/first_level_video/side_step_page.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import 'first_level_video/scissors_page.dart';
+import 'first_level_video/step_over_page.dart';
 
 class FirstLevelPage extends StatelessWidget {
   const FirstLevelPage({super.key});
@@ -96,7 +104,7 @@ class OutSideCut extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const FirstLevelPage(),
+            builder: (context) => const OutSideCutVideoPage(),
           ),
         );
       },
@@ -140,7 +148,7 @@ class InsideCut extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const FirstLevelPage(),
+            builder: (context) => const InSideCutVideoPage(),
           ),
         );
       },
@@ -184,7 +192,7 @@ class HookTurn extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const FirstLevelPage(),
+            builder: (context) => const HookTurnVideoPage(),
           ),
         );
       },
@@ -228,7 +236,7 @@ class SideStep extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const FirstLevelPage(),
+            builder: (context) => const SideStepVideoPage(),
           ),
         );
       },
@@ -272,7 +280,7 @@ class Scissors extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const FirstLevelPage(),
+            builder: (context) => const ScissorsVideoPage(),
           ),
         );
       },
@@ -316,7 +324,7 @@ class StepOver extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const FirstLevelPage(),
+            builder: (context) => const StepOverVideoPage(),
           ),
         );
       },
@@ -360,7 +368,7 @@ class Chop extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const FirstLevelPage(),
+            builder: (context) => const ChopVideoPage(),
           ),
         );
       },

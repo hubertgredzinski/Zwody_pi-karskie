@@ -1,15 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:football_tricks/features/levels/second_level/second_level_video/double_outside_cut_page.dart';
+import 'package:football_tricks/features/levels/second_level/second_level_video/double_scissors_page.dart';
+import 'package:football_tricks/features/levels/second_level/second_level_video/drag_push_page.dart';
+import 'package:football_tricks/features/levels/second_level/second_level_video/elastico_page.dart';
+import 'package:football_tricks/features/levels/second_level/second_level_video/pull_spin_page.dart';
+import 'package:football_tricks/features/levels/second_level/second_level_video/slap_step_over_page.dart';
+import 'package:football_tricks/features/levels/second_level/second_level_video/sonic_turn_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class ThirdLevelPage extends StatelessWidget {
-  const ThirdLevelPage({super.key});
+class SecondLevelPage extends StatelessWidget {
+  const SecondLevelPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('assets/stadium2.png'),
+          image: AssetImage('assets/stadium3.png'),
           fit: BoxFit.cover,
         ),
       ),
@@ -19,7 +26,7 @@ class ThirdLevelPage extends StatelessWidget {
             color: Colors.white,
           ),
           title: const Text(
-            'Poziom III',
+            'Poziom II',
             style: TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.bold,
@@ -35,31 +42,31 @@ class ThirdLevelPage extends StatelessWidget {
               SizedBox(
                 height: 30,
               ),
-              SissorsSlide(),
+              DoubleOutSideCut(),
               SizedBox(
                 height: 30,
               ),
-              McGeadySpin(),
+              SonicTurn(),
               SizedBox(
                 height: 30,
               ),
-              SlapHookTurn(),
+              DoubleScissors(),
               SizedBox(
                 height: 30,
               ),
-              DragSissors(),
+              DragPush(),
               SizedBox(
                 height: 30,
               ),
-              DragStepOver(),
+              PullSpin(),
               SizedBox(
                 height: 30,
               ),
-              ElasticoStepOver(),
+              SlapStepOver(),
               SizedBox(
                 height: 30,
               ),
-              McGeadyUTurn(),
+              Elastico(),
             ],
           ),
         ),
@@ -68,8 +75,8 @@ class ThirdLevelPage extends StatelessWidget {
   }
 }
 
-class SissorsSlide extends StatelessWidget {
-  const SissorsSlide({
+class DoubleOutSideCut extends StatelessWidget {
+  const DoubleOutSideCut({
     super.key,
   });
 
@@ -96,12 +103,12 @@ class SissorsSlide extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const ThirdLevelPage(),
+            builder: (context) => const DoubleOutSideCutVideoPage(),
           ),
         );
       },
       child: Text(
-        'Sissors Slide',
+        'Double Outside Cut',
         style: GoogleFonts.robotoSlab(
           color: Colors.white,
           fontSize: 25,
@@ -112,8 +119,8 @@ class SissorsSlide extends StatelessWidget {
   }
 }
 
-class McGeadySpin extends StatelessWidget {
-  const McGeadySpin({
+class DragPush extends StatelessWidget {
+  const DragPush({
     super.key,
   });
 
@@ -140,12 +147,12 @@ class McGeadySpin extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const ThirdLevelPage(),
+            builder: (context) => const DragPushVideoPage(),
           ),
         );
       },
       child: Text(
-        'McGeady Spin',
+        'Drag Push',
         style: GoogleFonts.robotoSlab(
           color: Colors.white,
           fontSize: 25,
@@ -156,8 +163,8 @@ class McGeadySpin extends StatelessWidget {
   }
 }
 
-class SlapHookTurn extends StatelessWidget {
-  const SlapHookTurn({
+class SonicTurn extends StatelessWidget {
+  const SonicTurn({
     super.key,
   });
 
@@ -184,12 +191,12 @@ class SlapHookTurn extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const ThirdLevelPage(),
+            builder: (context) => const SonicTurnVideoPage(),
           ),
         );
       },
       child: Text(
-        'Slap Hook Turn',
+        'Sonic Turn',
         style: GoogleFonts.robotoSlab(
           color: Colors.white,
           fontSize: 25,
@@ -200,8 +207,8 @@ class SlapHookTurn extends StatelessWidget {
   }
 }
 
-class DragSissors extends StatelessWidget {
-  const DragSissors({
+class DoubleScissors extends StatelessWidget {
+  const DoubleScissors({
     super.key,
   });
 
@@ -228,12 +235,12 @@ class DragSissors extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const ThirdLevelPage(),
+            builder: (context) => const DoubleScissorsVideoPage(),
           ),
         );
       },
       child: Text(
-        'Drag Sissors',
+        'Double Scissors',
         style: GoogleFonts.robotoSlab(
           color: Colors.white,
           fontSize: 25,
@@ -244,8 +251,8 @@ class DragSissors extends StatelessWidget {
   }
 }
 
-class DragStepOver extends StatelessWidget {
-  const DragStepOver({
+class PullSpin extends StatelessWidget {
+  const PullSpin({
     super.key,
   });
 
@@ -272,12 +279,12 @@ class DragStepOver extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const ThirdLevelPage(),
+            builder: (context) => const PullSpinVideoPage(),
           ),
         );
       },
       child: Text(
-        'Drag Step Over',
+        'Pull Spin',
         style: GoogleFonts.robotoSlab(
           color: Colors.white,
           fontSize: 25,
@@ -288,8 +295,8 @@ class DragStepOver extends StatelessWidget {
   }
 }
 
-class ElasticoStepOver extends StatelessWidget {
-  const ElasticoStepOver({
+class SlapStepOver extends StatelessWidget {
+  const SlapStepOver({
     super.key,
   });
 
@@ -316,12 +323,12 @@ class ElasticoStepOver extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const ThirdLevelPage(),
+            builder: (context) => const SlapStepOverVideoPage(),
           ),
         );
       },
       child: Text(
-        'Elastico Step Over',
+        'Slap Step Over',
         style: GoogleFonts.robotoSlab(
           color: Colors.white,
           fontSize: 25,
@@ -332,8 +339,8 @@ class ElasticoStepOver extends StatelessWidget {
   }
 }
 
-class McGeadyUTurn extends StatelessWidget {
-  const McGeadyUTurn({
+class Elastico extends StatelessWidget {
+  const Elastico({
     super.key,
   });
 
@@ -360,12 +367,12 @@ class McGeadyUTurn extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const ThirdLevelPage(),
+            builder: (context) => const ElasticoVideoPage(),
           ),
         );
       },
       child: Text(
-        'McGeady U Turn',
+        'Elastico',
         style: GoogleFonts.robotoSlab(
           color: Colors.white,
           fontSize: 25,

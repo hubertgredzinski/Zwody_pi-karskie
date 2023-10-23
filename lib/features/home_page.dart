@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:football_tricks/features/levels/second_level.page.dart';
-import 'package:football_tricks/features/levels/third_level.page.dart';
+import 'package:football_tricks/features/levels/second_level/second_level_buttons.page.dart';
+import 'package:football_tricks/features/levels/third_level/third_level_buttons.page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'levels/first_level._page.dart';
+import 'levels/first_level/first_level_buttons_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
