@@ -16,7 +16,7 @@ class SecondLevelPage extends StatelessWidget {
     return Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('assets/stadium3.png'),
+          image: AssetImage('assets/photos/stadium3.png'),
           fit: BoxFit.cover,
         ),
       ),

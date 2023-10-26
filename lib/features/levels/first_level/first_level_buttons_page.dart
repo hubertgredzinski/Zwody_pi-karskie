@@ -17,7 +17,7 @@ class FirstLevelPage extends StatelessWidget {
     return Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('assets/stadium.png'),
+          image: AssetImage('assets/photos/stadium.png'),
           fit: BoxFit.cover,
         ),
       ),
