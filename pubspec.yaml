@@ -36,6 +36,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   google_fonts: ^6.1.0
+  video_player: ^2.7.2
 
 dev_dependencies:
   flutter_test:
@@ -58,7 +59,12 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/
+    - assets/photos/stadium2.png
+    - assets/photos/stadium3.png
+    - assets/photos/stadium.png
+    - assets/photos/fotball2.png
+    - assets/video/scissorsslide.mp4
+    - assets/video/app.mp4
 
 
   # assets:
