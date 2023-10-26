@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
-import '../../../video__player_widget/outside_cut_video_player_widget.dart';
+import '../../../video__player_widget/video_player_widget.dart';
 
 class StepOverVideoPage extends StatefulWidget {
   const StepOverVideoPage({super.key});
@@ -46,7 +46,7 @@ class _StepOverVideoPageState extends State<StepOverVideoPage> {
           color: Colors.white,
         ),
         title: const Text(
-          'Outside Cut',
+          'Step Over',
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
-import '../../../video__player_widget/outside_cut_video_player_widget.dart';
+import '../../../video__player_widget/video_player_widget.dart';
 
 class ChopVideoPage extends StatefulWidget {
   const ChopVideoPage({super.key});
@@ -46,7 +46,7 @@ class _ChopVideoPageState extends State<ChopVideoPage> {
           color: Colors.white,
         ),
         title: const Text(
-          'Outside Cut',
+          'Chop',
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,

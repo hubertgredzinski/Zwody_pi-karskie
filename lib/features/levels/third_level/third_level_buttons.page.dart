@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:football_tricks/features/levels/third_level/third_level_video/drag_sissors_page.dart';
+import 'package:football_tricks/features/levels/third_level/third_level_video/drag_scissors_page.dart';
 import 'package:football_tricks/features/levels/third_level/third_level_video/drag_step_over_page.dart';
 import 'package:football_tricks/features/levels/third_level/third_level_video/elastico_step_over_page.dart';
 import 'package:football_tricks/features/levels/third_level/third_level_video/mc_geady_u_turn_page.dart';
 import 'package:football_tricks/features/levels/third_level/third_level_video/mcgeady_spin_page.dart';
-import 'package:football_tricks/features/levels/third_level/third_level_video/sissors_slide_page.dart';
+import 'package:football_tricks/features/levels/third_level/third_level_video/scissors_slide_page.dart';
 import 'package:football_tricks/features/levels/third_level/third_level_video/slap_hook_turn_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -42,7 +42,7 @@ class ThirdLevelPage extends StatelessWidget {
               SizedBox(
                 height: 30,
               ),
-              SissorsSlide(),
+              ScissorsSlide(),
               SizedBox(
                 height: 30,
               ),
@@ -54,7 +54,7 @@ class ThirdLevelPage extends StatelessWidget {
               SizedBox(
                 height: 30,
               ),
-              DragSissors(),
+              DragScissors(),
               SizedBox(
                 height: 30,
               ),
@@ -75,8 +75,8 @@ class ThirdLevelPage extends StatelessWidget {
   }
 }
 
-class SissorsSlide extends StatelessWidget {
-  const SissorsSlide({
+class ScissorsSlide extends StatelessWidget {
+  const ScissorsSlide({
     super.key,
   });
 
@@ -108,7 +108,7 @@ class SissorsSlide extends StatelessWidget {
         );
       },
       child: Text(
-        'Sissors Slide',
+        'Scissors Slide',
         style: GoogleFonts.robotoSlab(
           color: Colors.white,
           fontSize: 25,
@@ -207,8 +207,8 @@ class SlapHookTurn extends StatelessWidget {
   }
 }
 
-class DragSissors extends StatelessWidget {
-  const DragSissors({
+class DragScissors extends StatelessWidget {
+  const DragScissors({
     super.key,
   });
 
@@ -240,7 +240,7 @@ class DragSissors extends StatelessWidget {
         );
       },
       child: Text(
-        'Drag Sissors',
+        'Drag Scissors',
         style: GoogleFonts.robotoSlab(
           color: Colors.white,
           fontSize: 25,

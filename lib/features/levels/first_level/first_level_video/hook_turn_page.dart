@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
-import '../../../video__player_widget/outside_cut_video_player_widget.dart';
+import '../../../video__player_widget/video_player_widget.dart';
 
 class HookTurnVideoPage extends StatefulWidget {
   const HookTurnVideoPage({super.key});
@@ -46,7 +46,7 @@ class _HookTurnVideoPageState extends State<HookTurnVideoPage> {
           color: Colors.white,
         ),
         title: const Text(
-          'Outside Cut',
+          'Hook Turn',
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
