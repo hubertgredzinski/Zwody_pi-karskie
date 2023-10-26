@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
-import '../../../video__player_widget/outside_cut_video_player_widget.dart';
+import '../../../video__player_widget/video_player_widget.dart';
 
 class InSideCutVideoPage extends StatefulWidget {
   const InSideCutVideoPage({super.key});
@@ -46,7 +46,7 @@ class _InSideCutVideoPageState extends State<InSideCutVideoPage> {
           color: Colors.white,
         ),
         title: const Text(
-          'Outside Cut',
+          'Inside Cut',
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,

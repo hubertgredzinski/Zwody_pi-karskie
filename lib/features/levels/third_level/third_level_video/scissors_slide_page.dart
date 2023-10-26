@@ -3,14 +3,14 @@ import 'package:video_player/video_player.dart';
 
 import '../../../video__player_widget/video_player_widget.dart';
 
-class DragStepOverVideoPage extends StatefulWidget {
-  const DragStepOverVideoPage({super.key});
+class SissorsSlideVideoPage extends StatefulWidget {
+  const SissorsSlideVideoPage({super.key});
 
   @override
-  State<DragStepOverVideoPage> createState() => _DragStepOverVideoPageState();
+  State<SissorsSlideVideoPage> createState() => _SissorsSlideVideoPageState();
 }
 
-class _DragStepOverVideoPageState extends State<DragStepOverVideoPage> {
+class _SissorsSlideVideoPageState extends State<SissorsSlideVideoPage> {
   final asset = 'assets/video/scissorsslide.mp4';
   late VideoPlayerController controller;
 
@@ -46,7 +46,7 @@ class _DragStepOverVideoPageState extends State<DragStepOverVideoPage> {
           color: Colors.white,
         ),
         title: const Text(
-          'Drag Step Over',
+          'Scissors Slide',
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,

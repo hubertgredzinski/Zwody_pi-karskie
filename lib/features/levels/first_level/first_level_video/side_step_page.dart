@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
-import '../../../video__player_widget/outside_cut_video_player_widget.dart';
+import '../../../video__player_widget/video_player_widget.dart';
 
 class SideStepVideoPage extends StatefulWidget {
   const SideStepVideoPage({super.key});
@@ -46,7 +46,7 @@ class _SideStepVideoPageState extends State<SideStepVideoPage> {
           color: Colors.white,
         ),
         title: const Text(
-          'Outside Cut',
+          'Side Step',
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
