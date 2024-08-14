@@ -10,7 +10,7 @@ class OutSideCutVideoPage extends StatefulWidget {
 }
 
 class _OutSideCutVideoPageState extends State<OutSideCutVideoPage> {
-  final asset = 'assets/video/scissorsslide.mp4';
+  final asset = 'assets/video/outsidecutready3.mp4';
   late VideoPlayerController controller;
 
   @override
@@ -54,13 +54,15 @@ class _OutSideCutVideoPageState extends State<OutSideCutVideoPage> {
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black54,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          VideoPlayerWidget(controller: controller),
+          VideoPlayerWidget(
+            controller: controller,
+          ),
           const SizedBox(
-            height: 32,
+            height: 22,
           ),
           if (controller.value.isInitialized)
             CircleAvatar(

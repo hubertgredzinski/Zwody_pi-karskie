@@ -33,7 +33,7 @@ class VideoPlayerWidget extends StatelessWidget {
         ],
       );
   Widget buildVideoPlayer() => AspectRatio(
-        aspectRatio: controller.value.aspectRatio,
+        aspectRatio: 9.3 / 13.3,
         child: VideoPlayer(
           controller,
         ),
