@@ -11,7 +11,7 @@ class InSideCutVideoPage extends StatefulWidget {
 }
 
 class _InSideCutVideoPageState extends State<InSideCutVideoPage> {
-  final asset = 'assets/video/app.mp4';
+  final asset = 'assets/video/insidecutready.mp4';
   late VideoPlayerController controller;
 
   @override
@@ -55,7 +55,7 @@ class _InSideCutVideoPageState extends State<InSideCutVideoPage> {
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
