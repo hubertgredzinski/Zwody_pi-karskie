@@ -11,7 +11,7 @@ class SideStepVideoPage extends StatefulWidget {
 }
 
 class _SideStepVideoPageState extends State<SideStepVideoPage> {
-  final asset = 'assets/video/scissorsslide.mp4';
+  final asset = 'assets/video/Sidestepready.mp4';
   late VideoPlayerController controller;
 
   @override
@@ -55,7 +55,7 @@ class _SideStepVideoPageState extends State<SideStepVideoPage> {
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

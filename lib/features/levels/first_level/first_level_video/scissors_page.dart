@@ -11,7 +11,7 @@ class ScissorsVideoPage extends StatefulWidget {
 }
 
 class _ScissorsVideoPageState extends State<ScissorsVideoPage> {
-  final asset = 'assets/video/scissorsslide.mp4';
+  final asset = 'assets/video/Scissorssready.mp4';
   late VideoPlayerController controller;
 
   @override
@@ -55,7 +55,7 @@ class _ScissorsVideoPageState extends State<ScissorsVideoPage> {
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

@@ -67,6 +67,10 @@ flutter:
     - assets/video/scissorsslide.mp4
     - assets/video/insidecutready.mp4
     - assets/video/hookturnready.mp4
+    - assets/video/Sidestepready.mp4
+    - assets/video/Scissorssready.mp4
+    - assets/video/Stepoverready.mp4
+    - assets/video/Chopready.mp4
 
 
   # assets:
