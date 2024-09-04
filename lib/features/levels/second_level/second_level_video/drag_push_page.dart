@@ -11,7 +11,7 @@ class DragPushVideoPage extends StatefulWidget {
 }
 
 class _DragPushVideoPageState extends State<DragPushVideoPage> {
-  final asset = 'assets/video/scissorsslide.mp4';
+  final asset = 'assets/video/dragpush.mp4';
   late VideoPlayerController controller;
 
   @override
@@ -55,7 +55,7 @@ class _DragPushVideoPageState extends State<DragPushVideoPage> {
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

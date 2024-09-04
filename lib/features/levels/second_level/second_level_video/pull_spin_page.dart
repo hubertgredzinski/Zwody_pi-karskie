@@ -11,7 +11,7 @@ class PullSpinVideoPage extends StatefulWidget {
 }
 
 class _PullSpinVideoPageState extends State<PullSpinVideoPage> {
-  final asset = 'assets/video/scissorsslide.mp4';
+  final asset = 'assets/video/pullspin.mp4';
   late VideoPlayerController controller;
 
   @override
@@ -55,7 +55,7 @@ class _PullSpinVideoPageState extends State<PullSpinVideoPage> {
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

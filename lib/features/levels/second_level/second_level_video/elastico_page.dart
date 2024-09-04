@@ -11,7 +11,7 @@ class ElasticoVideoPage extends StatefulWidget {
 }
 
 class _ElasticoVideoPageState extends State<ElasticoVideoPage> {
-  final asset = 'assets/video/scissorsslide.mp4';
+  final asset = 'assets/video/elasticoready.mp4';
   late VideoPlayerController controller;
 
   @override
@@ -55,7 +55,7 @@ class _ElasticoVideoPageState extends State<ElasticoVideoPage> {
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

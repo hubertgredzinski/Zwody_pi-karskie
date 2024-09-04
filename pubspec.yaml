@@ -71,6 +71,15 @@ flutter:
     - assets/video/Scissorssready.mp4
     - assets/video/Stepoverready.mp4
     - assets/video/Chopready.mp4
+    - assets/video/doubleoutsidecut.mp4
+    - assets/video/sonicturn.mp4
+    - assets/video/doublesissorss.mp4
+    - assets/video/dragpush.mp4
+    - assets/video/pullspin.mp4
+    - assets/video/slapstepover.mp4
+    - assets/video/elasticoready.mp4
+    - assets/video/mcgeadyspin.mp4
+
 
 
   # assets:

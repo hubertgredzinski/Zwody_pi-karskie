@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:football_tricks/features/levels/second_level/second_level_buttons.page.dart';
-import 'package:football_tricks/features/levels/third_level/third_level_buttons.page.dart';
+// import 'package:football_tricks/features/levels/third_level/third_level_buttons.page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'levels/first_level/first_level_buttons_page.dart';
@@ -49,20 +49,20 @@ class HomePage extends StatelessWidget {
             ],
           ),
           body: const Center(
-            child: Column(children: [
-              SizedBox(
-                height: 190,
-              ),
-              LevelOneButton(),
-              SizedBox(
-                height: 30,
-              ),
-              LevelTwoButton(),
-              SizedBox(
-                height: 33,
-              ),
-              LevelThreeButton(),
-            ]),
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 190,
+                ),
+                LevelOneButton(),
+                SizedBox(
+                  height: 50,
+                ),
+                LevelTwoButton(),
+
+                // LevelThreeButton(),
+              ],
+            ),
           ),
         ),
       ),
@@ -105,7 +105,7 @@ class LevelOneButton extends StatelessWidget {
       child: Text(
         'Poziom I',
         style: GoogleFonts.robotoSlab(
-            color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold),
+            color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
       ),
     );
   }
@@ -146,49 +146,49 @@ class LevelTwoButton extends StatelessWidget {
       child: Text(
         'Poziom II',
         style: GoogleFonts.robotoSlab(
-            color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold),
+            color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
       ),
     );
   }
 }
 
-class LevelThreeButton extends StatelessWidget {
-  const LevelThreeButton({
-    super.key,
-  });
+// class LevelThreeButton extends StatelessWidget {
+//   const LevelThreeButton({
+//     super.key,
+//   });
 
-  @override
-  Widget build(BuildContext context) {
-    return ElevatedButton(
-      style: ElevatedButton.styleFrom(
-        shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(
-            Radius.circular(40),
-          ),
-          side: BorderSide(
-            color: Colors.white,
-            width: 1,
-          ),
-        ),
-        backgroundColor: Colors.green,
-        padding: const EdgeInsets.symmetric(
-          horizontal: 25,
-          vertical: 12,
-        ),
-      ),
-      onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => const ThirdLevelPage(),
-          ),
-        );
-      },
-      child: Text(
-        'Poziom III',
-        style: GoogleFonts.robotoSlab(
-            color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold),
-      ),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return ElevatedButton(
+//       style: ElevatedButton.styleFrom(
+//         shape: const RoundedRectangleBorder(
+//           borderRadius: BorderRadius.all(
+//             Radius.circular(40),
+//           ),
+//           side: BorderSide(
+//             color: Colors.white,
+//             width: 1,
+//           ),
+//         ),
+//         backgroundColor: Colors.green,
+//         padding: const EdgeInsets.symmetric(
+//           horizontal: 25,
+//           vertical: 12,
+//         ),
+//       ),
+//       onPressed: () {
+//         Navigator.push(
+//           context,
+//           MaterialPageRoute(
+//             builder: (context) => const ThirdLevelPage(),
+//           ),
+//         );
+//       },
+//       child: Text(
+//         'Poziom III',
+//         style: GoogleFonts.robotoSlab(
+//             color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold),
+//       ),
+//     );
+//   }
+// }

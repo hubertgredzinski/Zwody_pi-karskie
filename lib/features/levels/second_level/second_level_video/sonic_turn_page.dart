@@ -11,7 +11,7 @@ class SonicTurnVideoPage extends StatefulWidget {
 }
 
 class _SonicTurnVideoPageState extends State<SonicTurnVideoPage> {
-  final asset = 'assets/video/scissorsslide.mp4';
+  final asset = 'assets/video/sonicturn.mp4';
   late VideoPlayerController controller;
 
   @override
@@ -55,7 +55,7 @@ class _SonicTurnVideoPageState extends State<SonicTurnVideoPage> {
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

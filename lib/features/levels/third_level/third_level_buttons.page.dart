@@ -3,7 +3,7 @@ import 'package:football_tricks/features/levels/third_level/third_level_video/dr
 import 'package:football_tricks/features/levels/third_level/third_level_video/drag_step_over_page.dart';
 import 'package:football_tricks/features/levels/third_level/third_level_video/elastico_step_over_page.dart';
 import 'package:football_tricks/features/levels/third_level/third_level_video/mc_geady_u_turn_page.dart';
-import 'package:football_tricks/features/levels/third_level/third_level_video/mcgeady_spin_page.dart';
+// import 'package:football_tricks/features/levels/second_level/second_level_video/mcgeady_spin_page.dart';
 import 'package:football_tricks/features/levels/third_level/third_level_video/scissors_slide_page.dart';
 import 'package:football_tricks/features/levels/third_level/third_level_video/slap_hook_turn_page.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -46,10 +46,10 @@ class ThirdLevelPage extends StatelessWidget {
               SizedBox(
                 height: 30,
               ),
-              McGeadySpin(),
-              SizedBox(
-                height: 30,
-              ),
+              // McGeadySpin(),
+              // SizedBox(
+              //   height: 30,
+              // ),
               SlapHookTurn(),
               SizedBox(
                 height: 30,
@@ -119,49 +119,49 @@ class ScissorsSlide extends StatelessWidget {
   }
 }
 
-class McGeadySpin extends StatelessWidget {
-  const McGeadySpin({
-    super.key,
-  });
+// class McGeadySpin extends StatelessWidget {
+//   const McGeadySpin({
+//     super.key,
+//   });
 
-  @override
-  Widget build(BuildContext context) {
-    return ElevatedButton(
-      style: ElevatedButton.styleFrom(
-        shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(
-            Radius.circular(40),
-          ),
-          side: BorderSide(
-            color: Colors.white,
-            width: 1,
-          ),
-        ),
-        backgroundColor: Colors.green,
-        padding: const EdgeInsets.symmetric(
-          horizontal: 25,
-          vertical: 12,
-        ),
-      ),
-      onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => const McGeadySpinVideoPage(),
-          ),
-        );
-      },
-      child: Text(
-        'McGeady Spin',
-        style: GoogleFonts.robotoSlab(
-          color: Colors.white,
-          fontSize: 25,
-          fontWeight: FontWeight.bold,
-        ),
-      ),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return ElevatedButton(
+//       style: ElevatedButton.styleFrom(
+//         shape: const RoundedRectangleBorder(
+//           borderRadius: BorderRadius.all(
+//             Radius.circular(40),
+//           ),
+//           side: BorderSide(
+//             color: Colors.white,
+//             width: 1,
+//           ),
+//         ),
+//         backgroundColor: Colors.green,
+//         padding: const EdgeInsets.symmetric(
+//           horizontal: 25,
+//           vertical: 12,
+//         ),
+//       ),
+//       onPressed: () {
+//         Navigator.push(
+//           context,
+//           MaterialPageRoute(
+//             builder: (context) => const McGeadySpinVideoPage(),
+//           ),
+//         );
+//       },
+//       child: Text(
+//         'McGeady Spin',
+//         style: GoogleFonts.robotoSlab(
+//           color: Colors.white,
+//           fontSize: 25,
+//           fontWeight: FontWeight.bold,
+//         ),
+//       ),
+//     );
+//   }
+// }
 
 class SlapHookTurn extends StatelessWidget {
   const SlapHookTurn({

@@ -12,7 +12,7 @@ class DoubleScissorsVideoPage extends StatefulWidget {
 }
 
 class _DoubleScissorsVideoPageState extends State<DoubleScissorsVideoPage> {
-  final asset = 'assets/video/scissorsslide.mp4';
+  final asset = 'assets/video/doublesissorss.mp4';
   late VideoPlayerController controller;
 
   @override
@@ -56,7 +56,7 @@ class _DoubleScissorsVideoPageState extends State<DoubleScissorsVideoPage> {
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
